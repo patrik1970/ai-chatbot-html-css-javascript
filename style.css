@@ -164,6 +164,12 @@ body {
     border-radius: 13px 13px 3px 13px;
 }
 
+.chat-body .user-message .attachment {
+    width: 50%;
+    margin-top: -7px;
+    border-radius: 13px 3px 13px 13px;   
+}
+
 .chat-body .bot-message .thinking-indicator {
     display: flex;
     gap: 4px;
@@ -176,7 +182,7 @@ body {
     opacity: 0.7;
     border-radius: 50%;
     background: #6f6bc2;
-    /* animation: dotPulse 1.8s ease-in-out infinite; */
+    animation: dotPulse 1.8s ease-in-out infinite;
 }
 
 .chat-body .bot-message .thinking-indicator .dot:nth-child(1) {
@@ -273,4 +279,36 @@ body {
 
 .chat-form .chat-controls button:hover {
     background: #f1f1ff;
+}
+
+.chat-form .file-upload-wrapper {
+    height: 35px;
+    width: 35px;
+    position: relative;   
+}
+
+.chat-form .file-upload-wrapper :where(img, button) {
+    position:absolute;
+}
+
+.chat-form .file-upload-wrapper img {   
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.chat-form .file-upload-wrapper #file-cancel {
+    color: #ff0000;
+    background: #fff;
+}
+
+.chat-form .file-upload-wrapper :where(img, #file-cancel),
+.chat-form .file-upload-wrapper.file-uploaded #file-upload {
+    display: none;
+}
+
+.chat-form .file-upload-wrapper.file-uploaded img,
+.chat-form .file-upload-wrapper.file-uploaded:hover #file-cancel {
+    display: block;    
 }

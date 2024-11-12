@@ -31,7 +31,7 @@
                     Hey there 👋 <br /> How can I help you today?    
                 </div>
             </div>
-            <div class="message user-message">
+            <!--<div class="message user-message">
                 <div class="message-text">Lorem ipsum dolor sit amet consectetur</div>
             </div>
             <div class="message bot-message thinking">
@@ -45,7 +45,7 @@
                         <div class="dot"></div>   
                     </div>     
                 </div>
-            </div>
+            </div>-->
         </div>
 
         <!-- Chatbot Footer -->
@@ -54,7 +54,13 @@
                 <textarea placeholder="Message..." class="message-input" required></textarea>
                 <div class="chat-controls">
                     <button type="button" class="material-symbols-rounded">sentiment_satisfied</button>
-                    <button type="button" class="material-symbols-rounded">attach_file</button>
+                    <div class="file-upload-wrapper">
+                        <input type="file" accept="images/*" id="file-input" hidden>
+                        <img src="#">
+                        <button type="button" id="file-upload" class="material-symbols-rounded">attach_file</button>
+                        <button type="button" id="file-cancel" class="material-symbols-rounded">close</button>
+                    </div>
+                   
                     <button type="submit" id="send-message" 
                     class="material-symbols-rounded">arrow_upward</button> 
                 </div>  
