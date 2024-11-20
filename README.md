@@ -5,16 +5,12 @@ This project is an AI-powered chatbot implemented using HTML, CSS, and JavaScrip
 
 ## Project Structure
 The project directory contains the following files:
-- 
 
 index.html: The main HTML file that defines the structure of the chatbot interface.
-- 
 
 style.css: The CSS file that styles the chatbot interface.
-- 
 
 script.js: The JavaScript file that handles the chatbot's functionality.
-- 
 
 README.md: This documentation file.
 
